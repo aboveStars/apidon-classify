@@ -7,7 +7,7 @@ import json
 from torch.nn.functional import softmax
 
 # Load ImageNet class labels
-with open('imagenet_class_index.json') as f:
+with open('/Users/ali/Documents/Apidon/apidon-classify/pre-trained-pt-models/PreTrainedPytorch/imagenet_class_index.json') as f:
     class_idx = json.load(f)
 idx2label = [class_idx[str(k)][1] for k in range(len(class_idx))]
 
